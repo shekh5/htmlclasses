@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+    <style>
+        /*element selector*/
+        div{/*background-color: red;*/}
+        /*class selector*/
+        .red{background-color: red;}
+        /*id selector*/
+        #green{
+            background-color: green;
+        }
+        /*child selector*/
+        div > p {
+            background-color: bisque;
+            color: blue;
+        }
+        /*descendent selector*/
+        div  p {
+            background-color: bisque;
+            color: blue;
+        }
+        /*universal selector*/
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        /*pseudo selector*/
+        a:visited {
+            color: red;
+        }
+        a:link{
+            color: rgb(240, 8, 198);
+        }
+        /* it change background color when we click */
+        a:active{
+            background-color: green;
+        }
+        /* it change background color when we just put cursor above it */
+        a:hover{
+            background-color: greenyellow;
+        }
+        p:first-child{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>i am first child of p</p>
+        <p>i am second child of p</p>
+    </main>
+    <div class="red">i a am div</div>
+    <div>
+        <article>
+            <p>i am para in div</p></div>
+        </article>
+    <div id="green">i dont want same background color</div>
+    <div>
+        <a href="https://www.google.com">go to google</a>
+        <a href="https://www.bewakoof.com">go to bewakoof</a>
+        <a href="https://www.zomato.com">go to zomato</a>
+    </div>
+</body>
+</html>

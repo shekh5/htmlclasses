@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box {
+            width: 40vw;
+            height: 40vw;
+        }
+        .p11{
+            background-color: bisque;
+            color: rgb(90, 90, 3);
+            width: 30vw;
+            height: 30vw;
+            padding: 1vw;
+            margin: 1vw;
+            border: 2px solid brown;
+            border-radius: 1px;
+            /* box-sizing: border-box; */
+            box-shadow: 2px 2px 4px rgb(60, 158, 93);
+            /* to set scroll bar */
+            /* overflow: scroll; */
+            overflow: auto; 
+            /* overflow-x: hidden; */
+            /* overflow-y: scroll; */
+            /* white-space:nowrap; */
+            /* text-overflow: ellipsis; */
+        }
+        .h1-1{
+            text-align: center;
+            text-transform: capitalize;
+            font-style: italic;
+            color: red;
+        }
+        .h2-1{
+            text-align:left;
+            text-transform: capitalize;
+            
+        }
+        .ul-1{
+            display:inline-flex ;
+            /* this is used to give gap between list item */
+            gap: 20px; 
+            text-shadow: 2px 2px 4px red;
+            /*outline: width style color;*/
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1 class="h1-1">overflow in css</h1>
+    <div class="box">
+        <h2 class="h2-1">Navbar</h2>
+        <div>
+            <ul class="ul-1">
+                <li>home</li>
+                <li>about</li>
+                <li>search</li>
+            </ul>
+        </div>
+        <p class="p11">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni explicabo veniam a consequuntur,
+        assumenda repellat! Error recusandae repellat et praesentium pariatur quasi, necessitatibus hic aspernatur nobis
+        ratione eaque harum veniam incidunt illo excepturi ex tempore natus eum itaque, laboriosam neque. Magnam quos
+        esse, cupiditate perspiciatis illum laudantium veritatis. Quisquam, delectus aspernatur quibusdam tempore in ex
+        iste.
+        </p>
+        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css display property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            color: red;
+            background-color: bisque;
+            border: 2px solid black;
+            text-align: center;
+            /*margin:2px;
+            padding: 2px;*/   
+        }
+        .box{
+            border: 2px solid blue;
+            display: inline-block;
+            
+            padding: 45px;
+            margin:34px
+        }
+        .box1{
+            /*display: none;*/
+            /*visibility:hidden;*/
+            /*display: flex;*/
+            display:inline-flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!--https://developer.mozilla.org/en-us/docs/Web/CSS/display-->
+    <h1>Css Display Property</h1>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">also a nice box</div>
+    <span>I am a good</span>
+    <span>Boy</span>
+    <ol>
+        <h3>important thing about inline and block element</h3>
+        <li>span is inline element</li>
+        <li>div is block element</li>
+    </ol>
+</body>
+</html>

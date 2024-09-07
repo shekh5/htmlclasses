@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity and cascade</title>
+    <style>
+        h1 {
+            color: aqua;
+        }
+        /*the specificity of this selector is 10*/
+        .yellow {
+            color: yellow;
+        }
+        /*the specificity of this selector is 10*/
+        .cred {
+            color: red;
+        }
+        /*the specificity of this selector is 10*/
+        .cpurple {
+            color: purple;
+        }
+        .p1{
+            text-align: center;
+            color: red;
+            font-style: italic;
+            font-size: larger;
+            text-decoration: underline;
+        }
+        .p2{
+            text-align: center;
+            color: rgb(4, 96, 16);
+        }
+        .div1{
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="yellow cred cpurple">CSS specificity</h1>
+    <p class="p1">order of specificity </p>
+    <div class="div1">
+        <p class="p2">inline style > id selector > class or attribute selector > element selector > universal selector</p>
+    </div>
+</body>
+
+</html>
